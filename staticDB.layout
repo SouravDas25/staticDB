@@ -2,164 +2,74 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="src\table.cpp" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\fileObj.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1639" topLine="25" />
+			<Cursor1 position="418" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\dataBase.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="include\type2file.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="569" topLine="0" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="version.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\pairs.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="263" topLine="0" />
+			<Cursor1 position="0" topLine="213" />
 		</Cursor>
 	</File>
-	<File name="src\sdbdefs.cpp" open="0" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\base.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="683" topLine="21" />
+			<Cursor1 position="0" topLine="9" />
 		</Cursor>
 	</File>
-	<File name="include\query.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\common.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="518" topLine="0" />
+			<Cursor1 position="0" topLine="24" />
 		</Cursor>
 	</File>
-	<File name="src\parser.cpp" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\array.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="10795" topLine="354" />
+			<Cursor1 position="0" topLine="14" />
+		</Cursor>
+	</File>
+	<File name="src\parser.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="99" />
+		</Cursor>
+	</File>
+	<File name="src\db_tuple.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="40" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="include\common.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="17" />
 		</Cursor>
 	</File>
 	<File name="main.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2160" topLine="3" />
+			<Cursor1 position="2831" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\parser.h" open="0" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\query.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="636" topLine="6" />
+			<Cursor1 position="0" topLine="84" />
 		</Cursor>
 	</File>
-	<File name="src\array.cpp" open="0" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\table.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2225" topLine="0" />
+			<Cursor1 position="1538" topLine="18" />
 		</Cursor>
 	</File>
-	<File name="src\dataBase.cpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\type2file.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2648" topLine="123" />
+			<Cursor1 position="0" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\marshal.h" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\dataBase.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="148" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\db_tuple.cpp" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1374" topLine="27" />
-		</Cursor>
-	</File>
-	<File name="src\fileObj.cpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="797" topLine="18" />
-		</Cursor>
-	</File>
-	<File name="include\base.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1052" topLine="35" />
-		</Cursor>
-	</File>
-	<File name="include\array.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="986" topLine="20" />
-		</Cursor>
-	</File>
-	<File name="src\marshal.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="11738" topLine="299" />
-		</Cursor>
-	</File>
-	<File name="include\files.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="416" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\type2file.cpp" open="0" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="7076" topLine="230" />
-		</Cursor>
-	</File>
-	<File name="include\sdbdefs.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1019" topLine="22" />
-		</Cursor>
-	</File>
-	<File name="src\pairs.cpp" open="1" top="1" tabpos="9" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="8128" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\files.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="884" topLine="10" />
-		</Cursor>
-	</File>
-	<File name="include\common.h" open="0" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="72" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\query.cpp" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="3227" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\table.h" open="0" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="526" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\utility.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="7416" topLine="254" />
-		</Cursor>
-	</File>
-	<File name="src\base.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="21067" topLine="620" />
-		</Cursor>
-	</File>
-	<File name="include\db_tuple.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="7622" topLine="207" />
-		</Cursor>
-	</File>
-	<File name="include\type2file.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="1834" topLine="39" />
-		</Cursor>
-	</File>
-	<File name="include\fileObj.h" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="66" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="include\utility.h" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="605" topLine="15" />
-		</Cursor>
-	</File>
-	<File name="src\common.cpp" open="0" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2684" topLine="155" />
-		</Cursor>
-	</File>
-	<File name="include\pairs.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="894" topLine="19" />
+			<Cursor1 position="0" topLine="24" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

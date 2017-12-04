@@ -142,7 +142,7 @@ class tuple
     private:
 };
 
-};
+}
 /*
 
 int main ()
