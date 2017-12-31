@@ -1,0 +1,161 @@
+29 September 2017
+   released version 0.6.433.433 of StaticDB
+
+     Change log:
+        -Added: Added get support to find command
+
+29 September 2017
+   released version 0.6.432.432 of StaticDB
+
+     Change log:
+        -Added: a pair_GET function for sharing get identifier code on all commands
+
+29 September 2017
+   released version 0.6.429.429 of StaticDB
+
+     Change log:
+        -Added: DB_tuple has_key Function
+
+17 September 2017
+   released version 0.6.428.428 of StaticDB
+
+     Change log:
+        -Added: clear command and '/' based multi line input added
+
+19 July 2017
+   released version 0.6.384.384 of StaticDB
+
+     Change log:
+        -Cleaned: db_tuple and db_tuple_var redesigned and cleaned
+        -fixed a lot of bugs
+        -find Command Updated with subquery
+
+16 July 2017
+   released version 0.6.81.81 of StaticDB
+
+     Change log:
+        -Added: parser error bug fixed and parser refined
+
+16 July 2017
+   released version 0.6.11.11 of StaticDB
+
+     Change log:
+        -New: Adding Support For multiple query and nested query
+
+11 July 2017
+   released version 0.6.10.10 of StaticDB
+
+     Change log:
+        -Fixed: int to double and double to int cast in database query
+
+09 July 2017
+   released version 0.6.0.580 of StaticDB
+
+     Change log:
+        -New: Caching Of Data added
+        -Added: Cache Table Size change Command Added
+        -Updated: help command updated
+
+09 July 2017
+   released version 0.5.439.518 of StaticDB
+
+     Change log:
+        -Improved Base Module
+
+08 July 2017
+   released version 0.5.375.455 of StaticDB
+
+     Change log:
+        -Added: File Object Added to the database
+
+08 July 2017
+   released version 0.5.372.452 of StaticDB
+
+     Change log:
+        -Applied: Implemented new cleaner and efficient disk IO for the database
+
+07 July 2017
+   released version 0.5.361.441 of StaticDB
+
+     Change log:
+        -Fixed: Another bug in base module
+
+07 July 2017
+   released version 0.5.351.431 of StaticDB
+
+     Change log:
+        -Fixed: A major Pain in the ass bug removed .... from base file io module
+
+06 July 2017
+   released version 0.5.266.346 of StaticDB
+
+     Change log:
+        -Added: Optimized File IO For Data to limited no of read/writes
+
+06 July 2017
+   released version 0.5.225.305 of StaticDB
+
+     Change log:
+        -Updated: FILE Access and Signature procesing
+
+06 July 2017
+   released version 0.5.224.304 of StaticDB
+
+     Change log:
+        -Fixed: Fixed Bugges In Projection
+
+06 July 2017
+   released version 0.5.219.299 of StaticDB
+
+     Change log:
+        -Applied: improved statement parsing
+
+06 July 2017
+   released version 0.5.214.294 of StaticDB
+
+     Change log:
+        -Applied: Some Bug Fixes For NULL and Other HELP commands
+
+06 July 2017
+   released version 0.5.209.289 of StaticDB
+
+     Change log:
+        -Applied: All Projection Statement Implemented
+
+05 July 2017
+   released version 0.5.187.267 of StaticDB
+
+     Change log:
+        -Added: Projection to query statement - testing and correcton in process
+
+05 July 2017
+   released version 0.5.186.266 of StaticDB
+
+     Change log:
+        -Applied: $not Completely implemented in find
+
+05 July 2017
+   released version 0.5.178.258 of StaticDB
+
+     Change log:
+        -Applied: Optimized Db_Tuple to Make Less Copy
+
+05 July 2017
+   released version 0.5.177.257 of StaticDB
+
+     Change log:
+        -Added: $Not Operator Added For NoSQL Query
+
+03 July 2017
+   released version 0.5.142.222 of StaticDB
+
+     Change log:
+        -Applied: All StaticDB Return Msg Function refined to make it blockless return.
+        -Added: Basic Query Capability Added into the database.
+
+30 June 2017
+   released version 0.5.0 of test
+
+     Change log:
+        -Added: Import and Export For JSON and StaticDB Formats
+

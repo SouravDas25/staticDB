@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StaticDB</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    {% load static %}
+    <link href='{% static "myDB/prism.css" %}' rel="stylesheet">
+    <link href='{% static "myDB/codemirror.css" %}' rel="stylesheet">
+
+</head>
+<body style="background-color:#d0d5dd">
+<div class="container">
+    {% block content %}
+    {% endblock %}
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+{% load static %}
+<script src='{% static "myDB/prism.js" %}'></script>
+<script src='{% static "myDB/codemirror.js" %}'></script>
+<script src='{% static "myDB/sql.js" %}'></script>
+<script src='{% static "myDB/sql-hint.js" %}'></script>
+{% block script %}
+{% endblock %}
+</body>
+</html>
