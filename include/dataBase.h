@@ -23,13 +23,13 @@ namespace StaticDB {
 
     typedef struct _sdbMasterDB sdbMasterDB;
 
-    nosqlRT ads_connectDB(staticDB** addr_db,const string& db_file,const string& password);
+    nosqlRT ads_connectDB(staticDB **addr_db, const string &FileLayer, const string &password);
 
     void ads_disconnectDB(staticDB*db);
 
     nosqlRT ads_dbCommit(staticDB * db);
 
-    void db_write_dummy(const char * db_file,sdbMasterDB * mdb);
+    void db_write_dummy(const char *FileLayer, sdbMasterDB *mdb);
 
 }
 

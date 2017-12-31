@@ -1,6 +1,6 @@
 
-#ifndef SDB_FILES
-#define SDB_FILES
+#ifndef SFileLayerS
+#define SFileLayerS
 
 
 #include <stdio.h>
@@ -24,12 +24,12 @@ namespace StaticDB {
 
     const string db_signature = "staticDB v1.0" ;
 
-    bool fileExists(const string& db_file);
+    bool fileExists(const string &FileLayer);
 
-    bool isSignatureMatch(const db_file& f);
+    bool isSignatureMatch(const FileLayer &f);
 
-    void writeSignature(const db_file& f);
+    void writeSignature(const FileLayer &f);
 
 }
 
-#endif // SDB_FILES
+#endif // SFileLayerS

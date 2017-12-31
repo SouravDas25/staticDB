@@ -20,7 +20,8 @@ namespace StaticDB {
     const string& getDB_FileName(staticDB * db);
     tableBase* getDB_TableTree(staticDB * db);
     filepos default_start(void);
-    const db_file& get_db_file(staticDB * db);
+
+    const FileLayer &get_FileLayer(staticDB *db);
 
     typedef enum nosqlRT {  SUCCESS_MSG,
                             QUIT_MSG,

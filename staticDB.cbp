@@ -19,6 +19,7 @@
 					<Add option="-Wall" />
 					<Add option="-std=c++11" />
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -28,6 +29,8 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add option="-std=c++11" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -38,45 +41,33 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/array.h" />
-		<Unit filename="include/base.h" />
-		<Unit filename="include/common.h" />
-		<Unit filename="include/dataBase.h" />
-		<Unit filename="include/db_tuple.h" />
-		<Unit filename="include/fileObj.h" />
-		<Unit filename="include/files.h" />
-		<Unit filename="include/formatter.h" />
-		<Unit filename="include/marshal.h" />
-		<Unit filename="include/pairs.h" />
-		<Unit filename="include/parser.h" />
-		<Unit filename="include/query.h" />
-		<Unit filename="include/sdbdefs.h" />
-		<Unit filename="include/table.h" />
-		<Unit filename="include/type2file.h" />
-		<Unit filename="include/typecode.h" />
-		<Unit filename="include/utility.h" />
+		<Unit filename="include/JsonStore.h" />
+		<Unit filename="include/PhysicalLayer/Base.h" />
+		<Unit filename="include/PhysicalLayer/DataManager.h" />
+		<Unit filename="include/PhysicalLayer/DataNode.h" />
+		<Unit filename="include/PhysicalLayer/FreeList.h" />
+		<Unit filename="include/PhysicalLayer/FreeNode.h" />
+		<Unit filename="include/PhysicalLayer/SDB_Error.h" />
+		<Unit filename="include/PhysicalLayer/Utility.h" />
+		<Unit filename="include/PhysicalLayer/fileObj.h" />
+		<Unit filename="include/PhysicalLayer/file/File.hpp" />
+		<Unit filename="include/PhysicalLayer/file/File_SDL.hpp" />
+		<Unit filename="include/PhysicalLayer/file/File_Struct.hpp" />
+		<Unit filename="include/PhysicalLayer/file/File_stdio.hpp" />
+		<Unit filename="include/json.hpp" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/array.cpp" />
-		<Unit filename="src/base.cpp" />
-		<Unit filename="src/common.cpp" />
-		<Unit filename="src/dataBase.cpp" />
-		<Unit filename="src/db_tuple.cpp" />
-		<Unit filename="src/fileObj.cpp" />
-		<Unit filename="src/files.cpp" />
-		<Unit filename="src/formatter.cpp" />
-		<Unit filename="src/marshal.cpp" />
-		<Unit filename="src/pairs.cpp" />
-		<Unit filename="src/parser.cpp" />
-		<Unit filename="src/query.cpp" />
-		<Unit filename="src/sdbdefs.cpp" />
-		<Unit filename="src/table.cpp" />
-		<Unit filename="src/type2file.cpp" />
-		<Unit filename="src/utility.cpp" />
+		<Unit filename="version.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
 			<lib_finder disable_auto="1" />
+			<AutoVersioning>
+				<Scheme minor_max="26" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="100" />
+				<Settings autoincrement="1" date_declarations="1" use_define="0" update_manifest="1" do_auto_increment="0" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

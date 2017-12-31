@@ -9,7 +9,7 @@ namespace StaticDB {
 
 
 struct _staticDB {
-    db_file f;
+    FileLayer f;
     string password;
     pairBase * pb;
     stringBase * sb;
@@ -27,7 +27,8 @@ typedef struct _sdbMasterDB {
 } sdbMasterDB;
 
 static bool checkPassword(const string& s1,const string& enc);
-static nosqlRT readDB(const db_file& fp,sdbMasterDB * mdb);
+
+    static nosqlRT readDB(const FileLayer &fp, sdbMasterDB *mdb);
 
 
 nosqlRT ads_connectDB(staticDB** addr_db,const string& file,const string& password)
@@ -44,7 +45,7 @@ nosqlRT ads_connectDB(staticDB** addr_db,const string& file,const string& passwo
         strcpy(mdb.passwrd,p.c_str());
         db_write_dummy(file.c_str(),&mdb);
     }
-    db_file f;
+    FileLayer f;
     f.open(file,"rb+");
     sdbMasterDB mdb;
     memset(&mdb,0,sizeof(mdb));
@@ -80,7 +81,7 @@ filepos default_start(void)
     return db_signature.size() + sizeof(sdbMasterDB);
 }
 
-const db_file& get_db_file(staticDB * db)
+    const FileLayer &get_FileLayer(staticDB *db)
 {
     return db->f;
 }
@@ -117,7 +118,7 @@ static bool checkPassword(const string& s1,const string& enc)
     return false;
 }
 
-static nosqlRT databaseIO(bool RoW,sdbMasterDB * mdb,const db_file& f) //! READ and WRITE mdb struct
+    static nosqlRT databaseIO(bool RoW, sdbMasterDB *mdb, const FileLayer &f) //! READ and WRITE mdb struct
 {
     if(RoW == WRITE)
     {
@@ -132,7 +133,7 @@ static nosqlRT databaseIO(bool RoW,sdbMasterDB * mdb,const db_file& f) //! READ 
     return SUCCESS_MSG;
 }
 
-static nosqlRT isAuthenticatedDB(const db_file& f)
+    static nosqlRT isAuthenticatedDB(const FileLayer &f)
 {
     if( isSignatureMatch(f) == false )
     {
@@ -141,7 +142,7 @@ static nosqlRT isAuthenticatedDB(const db_file& f)
     return SUCCESS_MSG;
 }
 
-static nosqlRT readDB(const db_file& f,sdbMasterDB * mdb)
+    static nosqlRT readDB(const FileLayer &f, sdbMasterDB *mdb)
 {
     memset(mdb,0,sizeof(sdbMasterDB));
     if( isAuthenticatedDB(f) == ERROR_MSG )
@@ -158,7 +159,7 @@ static void ads_dbReadyForWrite(staticDB * db,sdbMasterDB * mdb)
 
 void db_write_dummy(const char * file,sdbMasterDB * mdb)
 {
-    db_file f;
+    FileLayer f;
     f.open(file,"wb");
     writeSignature(f);
     databaseIO(WRITE,mdb,f);
@@ -174,7 +175,7 @@ nosqlRT ads_dbCommit(staticDB * db)
 
     ads_dbReadyForWrite(db,&mdb);
 
-    const db_file& f = get_db_file(db);
+    const FileLayer &f = get_FileLayer(db);
 
     if( base_Commit(db->sb,f) == ERROR_MSG ) return ERROR_MSG;
 
@@ -185,7 +186,7 @@ nosqlRT ads_dbCommit(staticDB * db)
 
     if( isSignatureMatch(f) == false )
     {
-        f.seek(0,db_file::end);
+        f.seek(0, FileLayer::end);
         writeSignature(f);
     }
     return noSql_Msg(SUCCESS_MSG,"Database Successfully Committed.");
