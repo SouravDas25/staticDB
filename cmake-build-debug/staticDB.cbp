@@ -85,6 +85,9 @@
 		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/JsonStore.h">
 			<Option target="staticDB"/>
 		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/Parser.h">
+			<Option target="staticDB"/>
+		</Unit>
 		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/Base.h">
 			<Option target="staticDB"/>
 		</Unit>

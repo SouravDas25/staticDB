@@ -19,6 +19,6 @@ set(SOURCE_FILES
         include/json.hpp
         include/JsonStore.h
         main.cpp
-        version.h)
+        version.h include/Parser.h)
 
 add_executable(staticDB ${SOURCE_FILES})
