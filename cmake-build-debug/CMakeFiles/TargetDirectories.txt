@@ -1,0 +1,3 @@
+D:/Cloud/OneDrive/Programming/Projects/staticDB/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/Cloud/OneDrive/Programming/Projects/staticDB/cmake-build-debug/CMakeFiles/staticDB.dir
+D:/Cloud/OneDrive/Programming/Projects/staticDB/cmake-build-debug/CMakeFiles/edit_cache.dir
