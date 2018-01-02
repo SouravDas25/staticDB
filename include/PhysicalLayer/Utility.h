@@ -42,11 +42,11 @@ namespace StaticDB {
     typedef uint64_t L_ADDR;
     typedef uint64_t P_ADDR;
     typedef uint64_t MEM_SIZE;
-    typedef void *MEM_DATA;
+    typedef uint8_t *MEM_DATA;
 
 /** Initializations */
     const P_ADDR P_ADDR_NULL = 0;
-    //const L_ADDR L_ADDR_NULL = 0;
+    const L_ADDR L_ADDR_NULL = 0;
     const string basedata_sig("bd");
     const string baseIndex_sig("bi");
 

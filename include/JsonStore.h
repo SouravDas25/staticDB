@@ -19,11 +19,11 @@ namespace StaticDB {
 
         bool storeJson(L_ADDR key, json j) {
             string s = j.dump();
-            return store(key, s);
+            return DataManager::storeString(key, s);
         }
 
         json getJson(L_ADDR key) {
-            string s = getString(key);
+            string s = DataManager::getString(key);
             return json::parse(s);
         }
 

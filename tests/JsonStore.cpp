@@ -2,30 +2,59 @@
 
 
 #include <iostream>
-#include "include/JsonStore.h"
+#include "../include/JsonStore.h"
 
 int main() {
-    using StaticDB::sdb_error;
+    using namespace StaticDB;
 
-    StaticDB::JsonStore js;
+    JsonStore sm;
     try {
-        js.open("testdb", "root");
-        //dm.printBase(std::cout);
+        sm.open("testdb", "root");
+        int c = true;
+        while (c) {
+            string s;
+            cout << endl << "$ : ";
+            cin >> s;
+            try {
+                if (stricmp(s, "store") == 0) {
+                    int key;
+                    json val;
+                    cout << "key : ";
+                    cin >> key;
+                    cout << "value : ";
+                    cin >> val;
+                    sm.storeJson(key, val);
+                } else if (stricmp(s, "fetch") == 0) {
+                    int key;
+                    cout << "key : ";
+                    cin >> key;
+                    json val = sm.getJson(key);
+                    cout << val;
+                } else if (stricmp(s, "forget") == 0) {
+                    int key;
+                    cout << "key : ";
+                    cin >> key;
+                    sm.erase(key);
+                } else if (stricmp(s, "quit") == 0) {
+                    c = false;
+                } else if (stricmp(s, "print") == 0) {
+                    sm.printBase(cout);
+                } else if (stricmp(s, "clear") == 0) {
+                    cout << flush;
+                    system("CLS");
+                } else if (stricmp(s, "commit") == 0) {
+                    sm.commit();
+                    cout << "Successfully Commited";
+                } else {
+                    cout << "Command Not Recognized.";
+                }
+            }
+            catch (const std::exception &e) {
+                std::cout << e.what();
+            }
+        }
+        sm.close();
 
-        //dm.erase(2);
-//        js.store(1,"This is a String.");
-//        js.store(2,23);
-//        js.store(3,5.36);
-        json j2 = js.getJson(4);
-
-
-        //js.storeJson(4,j2);
-        std::cout << j2;
-
-        js.printBase(std::cout);
-
-        js.commit();
-        js.close();
     }
     catch (const std::exception &e) {
         std::cout << e.what();
@@ -34,5 +63,7 @@ int main() {
 
     return 0;
 }
+
+
 
 

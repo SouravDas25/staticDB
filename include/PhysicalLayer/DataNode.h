@@ -153,13 +153,13 @@ namespace StaticDB {
         }
 
         template<typename T>
-        bool modify(T *value, MEM_SIZE size, DN_TYPE type) {
+        bool modify(const T *value, MEM_SIZE size, DN_TYPE type) {
             size_t nob = size * sizeof(T);
             if (size > this->size()) {
                 if (this->data()) {
                     operator delete(_data);
                 }
-                _data = operator new(nob);
+                _data = (MEM_DATA) operator new(nob);
             }
             memcpy(_data, value, nob);
             this->size(nob);
@@ -168,25 +168,25 @@ namespace StaticDB {
             return true;
         }
 
-        bool put(const MEM_DATA val, MEM_SIZE size) {
-            return modify(&val, size, VOID_PTR);
+        bool putRaw(const MEM_DATA val, MEM_SIZE size) {
+            return modify(val, size, VOID_PTR);
         }
 
-        bool put(const int64_t &val) {
+        bool putInt(const int64_t &val) {
             return modify(&val, 1, INT);
         }
 
-        bool put(const double &val) {
+        bool putDouble(const double &val) {
             return modify(&val, 1, DOUBLE);
         }
 
-        bool put(const char *val) {
+        bool _put(const char *val) {
             return modify(val, strlen(val), STRING);
         }
 
-        bool put(const string &val) {
+        bool putString(const string &val) {
             const char *c = val.c_str();
-            return put(c);
+            return _put(c);
         }
 
         int64_t getInt() {
@@ -212,15 +212,6 @@ namespace StaticDB {
             }
             string s((const char *) this->data(), this->size());
             return s;
-        }
-
-        bool getCStr(char *val) {
-            if (type() != STRING) {
-                string s = "TypeError: Data is of type : ";
-                throw sdb_error(s + typeToString());
-            }
-            strncpy(val, (const char *) this->data(), this->size());
-            return true;
         }
 
         MEM_SIZE getRaw(void *dest) {
@@ -276,7 +267,7 @@ namespace StaticDB {
                 return false;
             }
 
-            this->data(operator new(this->size()));
+            this->data((MEM_DATA) operator new(this->size()));
             memset(this->data(), 0, this->size());
 
             f.readRaw(this->data(), (const int &) this->size());
@@ -288,7 +279,7 @@ namespace StaticDB {
         void print(ostream &out) {
             out << "{ ";
             out << " Address : " << addr() << ",";
-            out << " data : " << data() << ",";
+            out << " data : " << (void *) data() << ",";
             out << " Size : " << size() << ",";
             out << " type : " << typeToString() << ",";
             out << " memory : " << memory() << ",";

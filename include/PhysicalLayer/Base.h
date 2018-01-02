@@ -43,51 +43,38 @@ public:
 
     //! INTERFACE
 
-    bool set(L_ADDR key,const MEM_DATA val,int size)
+    bool setRaw(const L_ADDR key, const MEM_DATA val, const MEM_SIZE size)
     {
         if(!val) return false ;
         DataNode * bn = _FetchOrCreateDN(key);
-        if( !bn->put(val,size) ) return false;
+        if (!bn->putRaw(val, size)) {
+            operator delete(bn);
+            return false;
+        }
         _insertUpdateIC(key,bn);
         return true;
     }
 
-    bool set(L_ADDR key,const char* val)
+    bool setInt(L_ADDR key, const int64_t &val)
     {
         DataNode * bn = _FetchOrCreateDN(key);
-        bn->put(val);
+        bn->putInt(val);
         _insertUpdateIC(key,bn);
         return true;
     }
 
-    bool set(L_ADDR key,const int64_t& val)
+    bool setDouble(L_ADDR key, const double &val)
     {
         DataNode * bn = _FetchOrCreateDN(key);
-        bn->put(val);
+        bn->putDouble(val);
         _insertUpdateIC(key,bn);
         return true;
     }
 
-    bool set(L_ADDR key,const double& val)
+    bool setString(L_ADDR key, const string &val)
     {
         DataNode * bn = _FetchOrCreateDN(key);
-        bn->put(val);
-        _insertUpdateIC(key,bn);
-        return true;
-    }
-
-    bool set(L_ADDR key,const string& val)
-    {
-        DataNode * bn = _FetchOrCreateDN(key);
-        bn->put(val);
-        _insertUpdateIC(key,bn);
-        return true;
-    }
-
-    bool set(const L_ADDR& key,const MEM_DATA val,const MEM_SIZE size)
-    {
-        DataNode * bn = _FetchOrCreateDN(key);
-        bn->put(val,size);
+        bn->putString(val);
         _insertUpdateIC(key,bn);
         return true;
     }
@@ -113,18 +100,18 @@ public:
         return bn->getString();
     }
 
-    int getCStr(L_ADDR key,char * val)
-    {
-        DataNode * bn = getKey(key);
-        if(bn == nullptr) throw sdb_error("Key Not Found. ");
-        return bn->getCStr(val);
-    }
-
-    int getRaw(L_ADDR key,void * val)
+    MEM_SIZE getRaw(L_ADDR key, void *val)
     {
         DataNode * bn = getKey(key);
         if(bn == nullptr) throw sdb_error("Key Not Found. ");
         return bn->getRaw(val);
+    }
+
+    MEM_SIZE getSize(L_ADDR key)
+    {
+        DataNode * bn = getKey(key);
+        if(bn == nullptr) throw sdb_error("Key Not Found. ");
+        return bn->size();
     }
 
     bool erase(L_ADDR key)
@@ -151,13 +138,12 @@ public:
         {
             return false;
         }
-        if(it != this->indexTree.end() ) return true;
-        return false;
+        return it != this->indexTree.end();
     }
 
     DataNode* getKey(L_ADDR key)
     {
-        if( this->has(key) == false )
+        if (!this->has(key))
         {
             return nullptr;
         }

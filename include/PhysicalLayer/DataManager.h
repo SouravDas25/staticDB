@@ -167,7 +167,7 @@ public:
         }
     }
 
-    bool open(const string& filename,const string& pwd)
+    virtual bool open(const string &filename, const string &pwd)
     {
         storefileName = filename;
         sh.setPassword(pwd);
@@ -176,9 +176,10 @@ public:
             CreateNewStore();
         }
         readStore();
+        return true;
     }
 
-    bool close()
+    virtual bool close()
     {
         if(fileobj.isOpen())
         {
@@ -192,34 +193,29 @@ public:
 
     //! INTERFACE
 
-    bool store(L_ADDR key,const int32_t val)
+    /*bool storeInt(L_ADDR key,const int32_t val)
     {
-        return sb.set(key,(int64_t)val);
+        return sb.setInt(key,(int64_t)val);
+    }*/
+
+    bool storeInt(L_ADDR key, const int64_t val)
+    {
+        return sb.setInt(key, val);
     }
 
-    bool store(L_ADDR key,const int64_t val)
+    bool storeDouble(L_ADDR key, const double val)
     {
-        return sb.set(key,val);
+        return sb.setDouble(key, val);
     }
 
-    bool store(L_ADDR key,const double val)
+    bool storeString(L_ADDR key, const string &val)
     {
-        return sb.set(key,val);
+        return sb.setString(key, val);
     }
 
-    bool store(L_ADDR key,const string& val)
+    bool storeRaw(L_ADDR key, const MEM_DATA val, MEM_SIZE size)
     {
-        return sb.set(key,val);
-    }
-
-    bool store(L_ADDR key,const char* val)
-    {
-        return sb.set(key,val);
-    }
-
-    bool store(L_ADDR key,const MEM_DATA val,MEM_SIZE size)
-    {
-        return sb.set(key,val,size);
+        return sb.setRaw(key, val, size);
     }
 
     int64_t getInt(L_ADDR key)
@@ -237,28 +233,31 @@ public:
         return sb.getString(key);
     }
 
-    int getCStr(L_ADDR key,char * val)
-    {
-        return sb.getCStr(key,val);
-    }
-
-    int getRaw(L_ADDR key,void * val)
+    MEM_SIZE getRaw(L_ADDR key, MEM_DATA val)
     {
         return sb.getRaw(key,val);
     }
 
-    bool erase(L_ADDR key)
+    MEM_SIZE getSize(L_ADDR key)
     {
-        return sb.erase(key);
+        return sb.getSize(key);
     }
 
-    bool commit()
+    bool erase(L_ADDR index) {
+        return sb.erase(index);
+    }
+
+    bool has(L_ADDR index) {
+        return sb.has(index);
+    }
+
+    virtual bool commit()
     {
         writeStore();
         return true;
     }
 
-    bool rollback()
+    virtual bool rollback()
     {
         return sb.rollback();
     }

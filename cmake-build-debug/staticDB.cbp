@@ -124,6 +124,9 @@
 		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/fileObj.h">
 			<Option target="staticDB"/>
 		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/StringMapper.h">
+			<Option target="staticDB"/>
+		</Unit>
 		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/json.hpp">
 			<Option target="staticDB"/>
 		</Unit>

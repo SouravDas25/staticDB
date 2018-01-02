@@ -6,11 +6,41 @@
 
 #IncludeRegexTransform: 
 
-D:/Cloud/OneDrive/Programming/Projects/staticDB/include/Parser.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/JsonStore.h
+PhysicalLayer/DataManager.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/DataManager.h
 json.hpp
 D:/Cloud/OneDrive/Programming/Projects/staticDB/include/json.hpp
-PhysicalLayer/Utility.h
-D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/Utility.h
+
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/Base.h
+DataNode.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/DataNode.h
+FreeList.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/FreeList.h
+
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/DataManager.h
+utility.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/utility.h
+fileObj.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/fileObj.h
+Base.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/Base.h
+
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/DataNode.h
+utility.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/utility.h
+fileObj.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/fileObj.h
+
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/FreeList.h
+FreeNode.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/FreeNode.h
+
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/FreeNode.h
+utility.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/utility.h
+DataNode.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/DataNode.h
 
 D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/SDB_Error.h
 exception
@@ -18,7 +48,33 @@ exception
 string
 -
 
-D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/Utility.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File.hpp
+File_SDL.hpp
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File_SDL.hpp
+File_stdio.hpp
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File_stdio.hpp
+
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File_SDL.hpp
+SDL2/SDL_rwops.h
+-
+File_Struct.hpp
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File_Struct.hpp
+
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File_Struct.hpp
+
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File_stdio.hpp
+cstdio
+-
+File_Struct.hpp
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File_Struct.hpp
+
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/fileObj.h
+utility.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/utility.h
+file/File.hpp
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File.hpp
+
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/utility.h
 stdio.h
 -
 stdbool.h
@@ -82,6 +138,10 @@ D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/SDB_Error.
 ../../version.h
 D:/Cloud/OneDrive/Programming/Projects/staticDB/version.h
 
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/StringMapper.h
+JsonStore.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/JsonStore.h
+
 D:/Cloud/OneDrive/Programming/Projects/staticDB/include/json.hpp
 algorithm
 -
@@ -141,8 +201,8 @@ vector
 D:/Cloud/OneDrive/Programming/Projects/staticDB/main.cpp
 iostream
 -
-include/Parser.h
-D:/Cloud/OneDrive/Programming/Projects/staticDB/include/Parser.h
+include/StringMapper.h
+D:/Cloud/OneDrive/Programming/Projects/staticDB/include/StringMapper.h
 
 D:/Cloud/OneDrive/Programming/Projects/staticDB/version.h
 
