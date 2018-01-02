@@ -13,7 +13,7 @@ int main() {
         //dm.printBase(std::cout);
 
         //dm.erase(2);
-//        js.store(1,"Sourav Das is a good boy.");
+//        js.store(1,"This is a String.");
 //        js.store(2,23);
 //        js.store(3,5.36);
         json j2 = js.getJson(4);
@@ -30,7 +30,6 @@ int main() {
     catch (const std::exception &e) {
         std::cout << e.what();
     }
-    //dm.store(1,"SOURAV DAS");
 
 
     return 0;
