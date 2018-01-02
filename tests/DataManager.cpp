@@ -20,7 +20,7 @@ int main()
         std::cout << s << ", " << a << std::endl;
 
         //dm.erase(2);
-        //dm.store(1,"Sourav Das is a good boy.");
+        //dm.store(1,"This is a String.");
         //dm.store(2,23);
         //dm.store(3,5.36);
 
@@ -29,11 +29,9 @@ int main()
         dm.commit();
         dm.close();
     }
-    catch(const std::exception& e)
-    {
+    catch(const std::exception& e) {
         std::cout << e.what();
     }
-    //dm.store(1,"SOURAV DAS");
 
 
     return 0;
