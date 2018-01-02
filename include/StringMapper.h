@@ -26,9 +26,9 @@ namespace StaticDB {
         };
 
     protected:
-        L_ADDR generateIndex() {
+        /*L_ADDR generateIndex() {
             return autoIndexer + 1;
-        }
+        }*/
 
         L_ADDR incIndex() {
             return ++autoIndexer;
@@ -37,10 +37,12 @@ namespace StaticDB {
         bool insertRaw(const string &key, L_ADDR keyIndex, L_ADDR dataIndex) {
             stringTree.insert(make_pair(key, keyIndex));
             insertKeyIndex(keyIndex, dataIndex);
+            return true;
         }
 
         bool insertKeyIndex(L_ADDR keyIndex, L_ADDR dataIndex) {
             keyTree.insert(make_pair(keyIndex, dataIndex));
+            return true;
         }
 
         L_ADDR addKey(const string &key) {
