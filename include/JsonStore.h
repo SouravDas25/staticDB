@@ -1,5 +1,5 @@
-#ifndef JSONSTORE_H
-#define JSONSTORE_H
+#ifndef STATICDB_JSONSTORE_H
+#define STATICDB_JSONSTORE_H
 
 #include "PhysicalLayer/DataManager.h"
 #include "json.hpp"

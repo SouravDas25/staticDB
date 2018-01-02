@@ -2,14 +2,14 @@
 
 
 #include <iostream>
-#include "include/StringMapper.h"
+#include "include/Database.h"
 
 int main() {
     using namespace StaticDB;
 
-    StringMapper sm;
+    Database db;
     try {
-        sm.open("testdb", "root");
+        db.open("testdb", "root");
         int c = true;
         while (c) {
             string s;
@@ -23,27 +23,27 @@ int main() {
                     cin >> key;
                     cout << "value : ";
                     cin >> val;
-                    sm.store(key, val);
+                    db.store(key, val);
                 } else if (stricmp(s, "fetch") == 0) {
                     string key;
                     cout << "key : ";
                     cin >> key;
-                    json val = sm.fetch(key);
+                    json val = db.fetch(key);
                     cout << val;
                 } else if (stricmp(s, "forget") == 0) {
                     string key;
                     cout << "key : ";
                     cin >> key;
-                    sm.forget(key);
+                    db.forget(key);
                 } else if (stricmp(s, "print") == 0) {
-                    sm.print(cout);
+                    db.print(cout);
                 } else if (stricmp(s, "clear") == 0) {
                     cout << flush;
                     system("CLS");
                 } else if (stricmp(s, "quit") == 0) {
                     c = false;
                 } else if (stricmp(s, "commit") == 0) {
-                    sm.commit();
+                    db.commit();
                     cout << "Successfully Commited";
                 } else {
                     cout << "Command Not Recognized.";
@@ -53,7 +53,7 @@ int main() {
                 std::cout << e.what();
             }
         }
-        sm.close();
+        db.close();
 
     }
     catch (const std::exception &e) {

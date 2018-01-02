@@ -12,16 +12,57 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e7e7dbc-c3f9-4021-9135-e8228c9403f7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/StaticDb.docx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/StaticDb.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/StaticDb_uses.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/testdb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticDB.cbp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticDB.depend" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticDB.layout" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/staticDB.vcxproj" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/include/Database.h" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ChangesLog.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/JsonStore.h.gch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/PhysicalLayer/Base.h.gch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/PhysicalLayer/DataManager.h.gch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/PhysicalLayer/DataNode.h.gch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/StringMapper.h.gch" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/array.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/common.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/dataBase.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/db_tuple.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/files.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/formatter.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/pairs.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/sdbdefs.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/staticDB.hpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/table.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/type2file.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/include/typecode.h" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/SDB_Error.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/array.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/base.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/common.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/dataBase.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/db_tuple.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/fileObj.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/files.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/formatter.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/marshal.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/pairs.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/parser.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/query.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/sdbdefs.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/staticDB.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/table.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/tuple.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/type2file.cpp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/utility.cpp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/staticDB.dir/main.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/staticDB.dir/main.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/staticDB.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/staticDB.dir/objects.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/staticDB.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/staticDB.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/StringMapper.h" afterPath="$PROJECT_DIR$/include/StringMapper.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/staticDB.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/staticDB.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/JsonStore.h" afterPath="$PROJECT_DIR$/include/JsonStore.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/PhysicalLayer/Base.h" afterPath="$PROJECT_DIR$/include/PhysicalLayer/Base.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/PhysicalLayer/DataManager.h" afterPath="$PROJECT_DIR$/include/PhysicalLayer/DataManager.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/include/PhysicalLayer/Utility.h" afterPath="$PROJECT_DIR$/include/PhysicalLayer/Utility.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/staticDB_utility.py" afterPath="$PROJECT_DIR$/staticDB_utility.py" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +86,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+            <state relative-caret-position="400">
+              <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
               <folding>
                 <element signature="e#3#22#0" expanded="true" />
               </folding>
@@ -54,11 +95,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Database.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/Database.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="StringMapper.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/StringMapper.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3726">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="260">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -67,10 +118,10 @@
       <file leaf-file-name="Base.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/Base.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="345" column="9" lean-forward="true" selection-start-line="345" selection-start-column="9" selection-end-line="345" selection-end-column="9" />
+            <state relative-caret-position="26">
+              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
               <folding>
-                <element signature="e#64#85#0" expanded="true" />
+                <element signature="e#50#71#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,8 +130,8 @@
       <file leaf-file-name="DataManager.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/DataManager.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="246" column="21" lean-forward="false" selection-start-line="246" selection-start-column="21" selection-end-line="246" selection-end-column="21" />
+            <state relative-caret-position="130">
+              <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
               <folding>
                 <element signature="e#53#73#0" expanded="true" />
               </folding>
@@ -91,10 +142,10 @@
       <file leaf-file-name="JsonStore.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/JsonStore.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="26">
+              <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
               <folding>
-                <element signature="e#41#79#0" expanded="true" />
+                <element signature="e#59#97#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -103,18 +154,8 @@
       <file leaf-file-name="DataNode.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/DataNode.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
+            <state relative-caret-position="7254">
               <caret line="280" column="48" lean-forward="false" selection-start-line="280" selection-start-column="48" selection-end-line="280" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utility.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/Utility.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="122" column="17" lean-forward="false" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -130,7 +171,6 @@
       <list>
         <option value="$PROJECT_DIR$/include/json.hpp" />
         <option value="$PROJECT_DIR$/include/PhysicalLayer/SDB_Error.h" />
-        <option value="$PROJECT_DIR$/include/JsonStore.h" />
         <option value="$PROJECT_DIR$/include/PhysicalLayer/file/File_stdio.hpp" />
         <option value="$PROJECT_DIR$/include/PhysicalLayer/fileObj.h" />
         <option value="$PROJECT_DIR$/Parser.h" />
@@ -138,13 +178,16 @@
         <option value="$PROJECT_DIR$/tests/DataManager.cpp" />
         <option value="$PROJECT_DIR$/tests/JsonStore.cpp" />
         <option value="$PROJECT_DIR$/tests/ParserTest.cpp" />
-        <option value="$PROJECT_DIR$/include/PhysicalLayer/Base.h" />
-        <option value="$PROJECT_DIR$/include/PhysicalLayer/DataManager.h" />
-        <option value="$PROJECT_DIR$/include/PhysicalLayer/Utility.h" />
         <option value="$PROJECT_DIR$/include/PhysicalLayer/DataNode.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/staticDB_utility.py" />
         <option value="$PROJECT_DIR$/include/StringMapper.h" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/include/PhysicalLayer/DataManager.h" />
+        <option value="$PROJECT_DIR$/include/PhysicalLayer/Base.h" />
+        <option value="$PROJECT_DIR$/include/JsonStore.h" />
+        <option value="$PROJECT_DIR$/include/PhysicalLayer/Utility.h" />
+        <option value="$PROJECT_DIR$/include/Database.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -219,11 +262,11 @@
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Cloud\OneDrive\Programming\Projects\staticDB\tests" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Cloud\OneDrive\Programming\Projects\staticDB\include" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Cloud\OneDrive\Programming\Projects\staticDB\tests" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -455,7 +498,7 @@
       <workItem from="1514897340038" duration="46000" />
       <workItem from="1514897420467" duration="6000" />
       <workItem from="1514897451615" duration="26000" />
-      <workItem from="1514897501296" duration="1116000" />
+      <workItem from="1514897501296" duration="3449000" />
     </task>
     <task id="LOCAL-00001" summary="Rewritten Using OOP Standard">
       <created>1514739144499</created>
@@ -482,7 +525,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30518000" />
+    <option name="totallyTimeSpent" value="32851000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -495,17 +538,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1060" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25553098" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16793066" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25553098" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30769232" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16793066" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21902655" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1796875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1671875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853982" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19501625" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -515,11 +557,11 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Log Manager" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -580,61 +622,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/DataNode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5320">
-          <caret line="280" column="48" lean-forward="false" selection-start-line="280" selection-start-column="48" selection-end-line="280" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/Utility.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2318">
-          <caret line="122" column="17" lean-forward="false" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#3#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/StringMapper.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
-          <caret line="97" column="72" lean-forward="true" selection-start-line="97" selection-start-column="72" selection-end-line="97" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/Base.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2603">
-          <caret line="137" column="8" lean-forward="false" selection-start-line="137" selection-start-column="8" selection-end-line="137" selection-end-column="29" />
-          <folding>
-            <element signature="e#64#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/DataManager.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4788">
@@ -650,7 +637,7 @@
         <state relative-caret-position="57">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding>
-            <element signature="e#41#79#0" expanded="true" />
+            <element signature="e#59#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -721,7 +708,7 @@
         <state relative-caret-position="399">
           <caret line="19" column="44" lean-forward="true" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
           <folding>
-            <element signature="e#41#79#0" expanded="true" />
+            <element signature="e#59#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -748,13 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/json.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-36936">
-          <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -872,73 +852,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/JsonStore.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#41#79#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/DataNode.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="280" column="48" lean-forward="false" selection-start-line="280" selection-start-column="48" selection-end-line="280" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/DataManager.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="246" column="21" lean-forward="false" selection-start-line="246" selection-start-column="21" selection-end-line="246" selection-end-column="21" />
-          <folding>
-            <element signature="e#53#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/Utility.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="122" column="17" lean-forward="false" selection-start-line="122" selection-start-column="16" selection-end-line="122" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="1" column="11" lean-forward="true" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="95">
-            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/Base.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="345" column="9" lean-forward="true" selection-start-line="345" selection-start-column="9" selection-end-line="345" selection-end-column="9" />
-          <folding>
-            <element signature="e#64#85#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -974,18 +891,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/array.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-684">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/array.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-968">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/dataBase.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/json.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="6" column="68" lean-forward="false" selection-start-line="6" selection-start-column="68" selection-end-line="6" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/staticDB.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/table.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="24" column="79" lean-forward="true" selection-start-line="24" selection-start-column="79" selection-end-line="24" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="156">
+            <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/Base.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+          <folding>
+            <element signature="e#50#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/DataManager.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="e#53#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/JsonStore.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="28" lean-forward="true" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+          <folding>
+            <element signature="e#59#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/DataNode.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7254">
+          <caret line="280" column="48" lean-forward="false" selection-start-line="280" selection-start-column="48" selection-end-line="280" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PhysicalLayer/Utility.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="142" column="39" lean-forward="true" selection-start-line="142" selection-start-column="39" selection-end-line="142" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/include/StringMapper.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3726">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="260">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Database.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        <state relative-caret-position="400">
+          <caret line="24" column="31" lean-forward="true" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
           <folding>
             <element signature="e#3#22#0" expanded="true" />
           </folding>

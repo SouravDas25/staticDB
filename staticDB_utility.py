@@ -3,7 +3,7 @@ from struct import *
 sig = "staticDB v1.0"
 bi_sig = len("bi")
 bd_sig = len("bd")
-filename = "testdb.sdb"
+filename = "testdb"
 disk_util_size = 12 + bd_sig
 
 

@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/Database.h">
+			<Option target="staticDB"/>
+		</Unit>
 		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/JsonStore.h">
 			<Option target="staticDB"/>
 		</Unit>

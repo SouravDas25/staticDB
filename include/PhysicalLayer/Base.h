@@ -1,5 +1,5 @@
-#ifndef staticDATABASESTRING_H
-#define staticDATABASESTRING_H
+#ifndef STATICDB_BASE_H
+#define STATICDB_BASE_H
 
 
 #include "DataNode.h"
@@ -39,6 +39,7 @@ public:
     {
         indexTree.insert( make_pair(key,bn) );
         removeCache(key);
+        return true;
     }
 
     //! INTERFACE
@@ -188,7 +189,7 @@ public:
         fl.shrinkAdjacent();
         P_ADDR pos = fl.getEmptyAddress();
         if( !fileobj.seek(fl.getEmptyAddress()) ) return P_ADDR_NULL;
-        f.writeRaw(baseIndex_sig.c_str(),baseIndex_sig.size()*sizeof(char)); //! signature
+        f.writeRaw(baseIndex_sig.c_str(), (int) (baseIndex_sig.size() * sizeof(char))); //! signature
         writeIndex(f);
         fl.writeFreelist(f);
         return pos;
@@ -231,7 +232,7 @@ public:
 
     P_ADDR commit()
     {
-        if(fileobj.isOpen() == false)
+        if(!fileobj.isOpen())
         {
             throw sdb_error("File Not open For Writting");
         }
@@ -277,7 +278,7 @@ public:
         return true;
     }
 
-    int getCacheSize()
+    size_t getCacheSize()
     {
         return this->cacheSize;
     }
@@ -327,10 +328,9 @@ public:
 
     void print( ostream &out ) const
     {
-        map<L_ADDR,DataNode*>::const_iterator it;
         out << "{ " << endl ;
         out << "IndexList : " << endl ;
-        for( it = indexTree.begin(); it != indexTree.end(); ++it)
+        for(auto it = indexTree.begin(); it != indexTree.end(); ++it)
         {
             out << ' ' << it->first << " : " ;
             it->second->print(out) ;

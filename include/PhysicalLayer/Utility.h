@@ -97,7 +97,6 @@ namespace StaticDB {
             default :
                 throw c;
         }
-        throw c;
     }
 
     int strnicmp(const string &a, const string &b, size_t len) {
@@ -135,11 +134,11 @@ namespace StaticDB {
         char tmp[2] = {0, 0};
         for (i = 0; i < len + 1; i++) {
             tmp[0] = str[i];
-            if (startbrac(str[i]) == true && !bp2 && (!qou2 && !qou1)) clevel++;
-            else if (endbrac(str[i]) == true && !bp2 && (!qou2 && !qou1)) clevel--;
-            if (str[i] == '\'' && !qp1 && qou2 == false) qou1 = !qou1;
-            if (str[i] == '"' && !qp1 && qou1 == false) qou2 = !qou2;
-            if (clevel == 0 && qou1 == false && qou2 == false) {
+            if (startbrac(str[i]) && !bp2 && (!qou2 && !qou1)) clevel++;
+            else if (endbrac(str[i]) && !bp2 && (!qou2 && !qou1)) clevel--;
+            if (str[i] == '\'' && !qp1 && !qou2) qou1 = !qou1;
+            if (str[i] == '"' && !qp1 && !qou1) qou2 = !qou2;
+            if (clevel == 0 && !qou1 && !qou2) {
                 if (sep.find(tmp) != string::npos || str[i] == '\0') {
                     if (i - prev > 1) {
                         if (prev != 0) prev++;

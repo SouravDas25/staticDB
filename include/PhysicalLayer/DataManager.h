@@ -15,11 +15,7 @@ bool isSignatureMatching(const FileLayer& f,const string& s)
     char sig[s.size()+1];
     f.readRaw(sig,sizeof(char)*s.size()); //! signature
     sig[s.size()] = 0;
-    if( stricmp(sig,s) != 0)
-    {
-        return false ;
-    }
-    return true;
+    return stricmp(sig, s) == 0;
 }
 
 
@@ -69,12 +65,13 @@ public:
             throw sdb_error("Security Issue : Password Have To Be Between (0-31) Characters.");
         }
         password = pwd;
+        return true;
     }
 
-    const string& getPassword()
+    /*const string& getPassword()
     {
         return password;
-    }
+    }*/
 
     void prepareNewDatabase(FileLayer& f)
     {
@@ -92,18 +89,12 @@ public:
     {
         if( f.getSize() < default_start()  ) return false;
         f.seek(0);
-        if( isSignatureMatching(f,db_signature) )
-        {
-            //f.seek( -db_signature.size(), FileLayer::end );
-            //if( isSignatureMatching(f,db_signature)) return true;
-            return true;
-        }
-        return false;
+        return isSignatureMatching(f, db_signature);
     }
 
     static bool isAuthenticatedDB(const FileLayer& f)
     {
-        if( isSignatureMatch(f) == false )
+        if(!isSignatureMatch(f))
         {
             throw sdb_error("Not A Valid Database File, Database Signature Did Not Match.");
         }
@@ -120,7 +111,7 @@ public:
         return true;
     }
 
-    bool readHeader(const FileLayer& f)
+    void readHeader(const FileLayer& f)
     {
         StoreHeader::isAuthenticatedDB(f);
 
@@ -129,7 +120,7 @@ public:
         f.readRaw(&mdb,sizeof(sdbMasterDB));
         this->baseAddress = mdb.baseArr;
         string tp(mdb.password);
-        if( verifyPassword(tp) == false )
+        if(!verifyPassword(tp))
         {
             throw sdb_error("Incorrect Password.");
         }
@@ -138,8 +129,7 @@ public:
 
     bool verifyPassword(const string& pwd)
     {
-        if(pwd != password) return false;
-        return true;
+        return !(pwd != password);
     }
 
 
