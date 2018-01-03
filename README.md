@@ -4,7 +4,8 @@ A Json DataStore Engine written in C++.
 1. `Only Header` Import Library.
 2. Direct `JSON` Storage.
 3. File Based Database.
-4. Extended With `Cython` to import in `Python`.
+4. Extremely light weight.
+5. Extended With `Cython` to import in `Python`.
 
 ## Dependencies
  1. [JSON for Modern C++](https://nlohmann.github.io/json/) 
