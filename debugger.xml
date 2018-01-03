@@ -1,0 +1,14 @@
+<application>
+  <component name="XDebuggerSettings">
+    <data-views />
+    <general />
+    <debuggers>
+      <debugger id="javascript">
+        <configuration>
+          <custom-object-presentation />
+          <stepping-filters-enabled>false</stepping-filters-enabled>
+        </configuration>
+      </debugger>
+    </debuggers>
+  </component>
+</application>
