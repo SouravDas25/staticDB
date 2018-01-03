@@ -389,4 +389,26 @@ namespace StaticDB {
 
 
 }
+
+namespace std{
+
+template <typename T>
+  string to_string ( T Number )
+  {
+     std::ostringstream ss;
+     ss << Number;
+     return ss.str();
+  }
+
+  int stoi(string s, size_t * n)
+  {
+  	  char ** c = NULL;
+      long int i =  strtol(s.c_str(),c,10);
+      if(c==NULL) *n = 0;
+      else *n = *c - s.c_str();
+      return i;
+  }
+
+}
+
 #endif // SDB_UTILITY_H
