@@ -1,0 +1,388 @@
+# depslib dependency file v1.0
+1514996920 source:d:\cloud\onedrive\programming\projects\staticdb\cython_statidb\staticdb.cpp
+	"Python.h"
+	<stddef.h>
+	"longintrepr.h"
+	<stdint.h>
+	<math.h>
+	<string.h>
+	<string>
+	"ios"
+	"new"
+	"stdexcept"
+	"typeinfo"
+	<stdint.h>
+	"Database.h"
+	<omp.h>
+	<cstdlib>
+	<new>
+	<new>
+	<typeinfo>
+	<stdexcept>
+	<ios>
+	"compile.h"
+	"frameobject.h"
+	"traceback.h"
+
+1487005678 c:\python27\include\python.h
+	"patchlevel.h"
+	"pyconfig.h"
+	"pymacconfig.h"
+	<limits.h>
+	<stdio.h>
+	<string.h>
+	<errno.h>
+	<stdlib.h>
+	<unistd.h>
+	<stddef.h>
+	<assert.h>
+	"pyport.h"
+	"pymath.h"
+	"pymem.h"
+	"object.h"
+	"objimpl.h"
+	"pydebug.h"
+	"unicodeobject.h"
+	"intobject.h"
+	"boolobject.h"
+	"longobject.h"
+	"floatobject.h"
+	"complexobject.h"
+	"rangeobject.h"
+	"stringobject.h"
+	"memoryobject.h"
+	"bufferobject.h"
+	"bytesobject.h"
+	"bytearrayobject.h"
+	"tupleobject.h"
+	"listobject.h"
+	"dictobject.h"
+	"enumobject.h"
+	"setobject.h"
+	"methodobject.h"
+	"moduleobject.h"
+	"funcobject.h"
+	"classobject.h"
+	"fileobject.h"
+	"cobject.h"
+	"pycapsule.h"
+	"traceback.h"
+	"sliceobject.h"
+	"cellobject.h"
+	"iterobject.h"
+	"genobject.h"
+	"descrobject.h"
+	"warnings.h"
+	"weakrefobject.h"
+	"codecs.h"
+	"pyerrors.h"
+	"pystate.h"
+	"pyarena.h"
+	"modsupport.h"
+	"pythonrun.h"
+	"ceval.h"
+	"sysmodule.h"
+	"intrcheck.h"
+	"import.h"
+	"abstract.h"
+	"compile.h"
+	"eval.h"
+	"pyctype.h"
+	"pystrtod.h"
+	"pystrcmp.h"
+	"dtoa.h"
+	"pyfpe.h"
+	<pth.h>
+
+1505572058 c:\python27\include\patchlevel.h
+
+1487005698 c:\python27\include\pyconfig.h
+	<io.h>
+	<stdlib.h>
+	<float.h>
+	<basetsd.h>
+	<io.h>
+	<stdio.h>
+
+1487005680 c:\python27\include\pymacconfig.h
+
+1487005680 c:\python27\include\pyport.h
+	"pyconfig.h"
+	<inttypes.h>
+	<stdint.h>
+	<stdlib.h>
+	<ieeefp.h>
+	<math.h>
+	<sys/time.h>
+	<time.h>
+	<sys/time.h>
+	<time.h>
+	<sys/select.h>
+	<sys/types.h>
+	"unixstuff.h"
+	<sys/types.h>
+	<sys/stat.h>
+	<stat.h>
+	<sys/types.h>
+	<sys/termio.h>
+	<termios.h>
+	<osreldate.h>
+	<ctype.h>
+	<wctype.h>
+
+1487005680 c:\python27\include\pymath.h
+	"pyconfig.h"
+
+1487005680 c:\python27\include\pymem.h
+	"pyport.h"
+
+1487005680 c:\python27\include\object.h
+
+1487005680 c:\python27\include\objimpl.h
+	"pymem.h"
+
+1487005680 c:\python27\include\pydebug.h
+
+1487005680 c:\python27\include\unicodeobject.h
+	<stdarg.h>
+	<ctype.h>
+	<time.h>
+	<wchar.h>
+	<wctype.h>
+
+1487005678 c:\python27\include\intobject.h
+
+1487005678 c:\python27\include\boolobject.h
+
+1487005678 c:\python27\include\longobject.h
+
+1487005678 c:\python27\include\floatobject.h
+
+1487005678 c:\python27\include\complexobject.h
+
+1487005680 c:\python27\include\rangeobject.h
+
+1487005680 c:\python27\include\stringobject.h
+	<stdarg.h>
+
+1487005680 c:\python27\include\memoryobject.h
+
+1487005678 c:\python27\include\bufferobject.h
+
+1487005678 c:\python27\include\bytesobject.h
+
+1487005678 c:\python27\include\bytearrayobject.h
+	<stdarg.h>
+
+1487005680 c:\python27\include\tupleobject.h
+
+1487005678 c:\python27\include\listobject.h
+
+1487005678 c:\python27\include\dictobject.h
+
+1487005678 c:\python27\include\enumobject.h
+
+1487005680 c:\python27\include\setobject.h
+
+1487005680 c:\python27\include\methodobject.h
+
+1487005680 c:\python27\include\moduleobject.h
+
+1487005678 c:\python27\include\funcobject.h
+
+1487005678 c:\python27\include\classobject.h
+
+1487005678 c:\python27\include\fileobject.h
+
+1487005678 c:\python27\include\cobject.h
+
+1487005680 c:\python27\include\pycapsule.h
+
+1487005680 c:\python27\include\traceback.h
+
+1503771432 c:\python27\include\sliceobject.h
+
+1487005678 c:\python27\include\cellobject.h
+
+1487005678 c:\python27\include\iterobject.h
+
+1487005678 c:\python27\include\genobject.h
+
+1487005678 c:\python27\include\descrobject.h
+
+1487005680 c:\python27\include\warnings.h
+
+1487005680 c:\python27\include\weakrefobject.h
+
+1487005678 c:\python27\include\codecs.h
+
+1487005680 c:\python27\include\pyerrors.h
+	<stdarg.h>
+
+1487005680 c:\python27\include\pystate.h
+
+1487005680 c:\python27\include\pyarena.h
+
+1487005680 c:\python27\include\modsupport.h
+	<stdarg.h>
+
+1503771432 c:\python27\include\pythonrun.h
+
+1503771432 c:\python27\include\ceval.h
+
+1487005680 c:\python27\include\sysmodule.h
+
+1487005678 c:\python27\include\intrcheck.h
+
+1487005678 c:\python27\include\import.h
+
+1487005678 c:\python27\include\abstract.h
+
+1487005678 c:\python27\include\compile.h
+	"code.h"
+
+1487005678 c:\python27\include\code.h
+
+1487005678 c:\python27\include\eval.h
+
+1487005680 c:\python27\include\pyctype.h
+
+1487005680 c:\python27\include\pystrtod.h
+
+1487005680 c:\python27\include\pystrcmp.h
+
+1487005678 c:\python27\include\dtoa.h
+
+1487005680 c:\python27\include\pyfpe.h
+	<signal.h>
+	<setjmp.h>
+	<math.h>
+
+1487005678 c:\python27\include\longintrepr.h
+
+1514978318 d:\cloud\onedrive\programming\projects\staticdb\src\database.h
+	"Compiler.h"
+
+1514977777 d:\cloud\onedrive\programming\projects\staticdb\src\compiler.h
+	"StringMapper.h"
+	"Parser.h"
+
+1514978109 d:\cloud\onedrive\programming\projects\staticdb\src\stringmapper.h
+	"JsonStore.h"
+
+1514900558 d:\cloud\onedrive\programming\projects\staticdb\src\jsonstore.h
+	"PhysicalLayer/DataManager.h"
+	"json.hpp"
+
+1514900260 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\datamanager.h
+	"utility.h"
+	"fileObj.h"
+	"Base.h"
+
+1514996981 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\utility.h
+	<stdio.h>
+	<stdbool.h>
+	<stdlib.h>
+	<stdint.h>
+	<string.h>
+	<stdarg.h>
+	<math.h>
+	<cmath>
+	<cstdio>
+	<cstdbool>
+	<cstdlib>
+	<cstdint>
+	<cstring>
+	<cstdarg>
+	<iostream>
+	<string>
+	<vector>
+	<stack>
+	<algorithm>
+	<exception>
+	<fstream>
+	<sstream>
+	<cerrno>
+	<cctype>
+	<cstdio>
+	<cstdint>
+	<memory>
+	<limits>
+	<map>
+	"SDB_Error.h"
+	"../version.h"
+
+1514735804 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\sdb_error.h
+	<exception>
+	<string>
+
+1514980172 d:\cloud\onedrive\programming\projects\staticdb\src\version.h
+
+1514738152 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\fileobj.h
+	"utility.h"
+	"file/File.hpp"
+
+1465747200 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\file\file.hpp
+	"File_SDL.hpp"
+	"File_stdio.hpp"
+
+1465747200 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\file\file_sdl.hpp
+	<SDL2/SDL_rwops.h>
+	"File_Struct.hpp"
+
+1465747200 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\file\file_struct.hpp
+
+1514738087 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\file\file_stdio.hpp
+	<cstdio>
+	"File_Struct.hpp"
+
+1514976043 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\base.h
+	"DataNode.h"
+	"FreeList.h"
+
+1514972466 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\datanode.h
+	"utility.h"
+	"fileObj.h"
+
+1514975598 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\freelist.h
+	"FreeNode.h"
+
+1514568805 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\freenode.h
+	"utility.h"
+	"DataNode.h"
+
+1514980247 d:\cloud\onedrive\programming\projects\staticdb\src\json.hpp
+	<algorithm>
+	<array>
+	<cassert>
+	<ciso646>
+	<clocale>
+	<cmath>
+	<cstddef>
+	<cstdint>
+	<cstdlib>
+	<cstring>
+	<forward_list>
+	<functional>
+	<initializer_list>
+	<iomanip>
+	<iosfwd>
+	<iterator>
+	<limits>
+	<locale>
+	<map>
+	<memory>
+	<numeric>
+	<sstream>
+	<string>
+	<type_traits>
+	<utility>
+	<valarray>
+	<vector>
+
+1514977304 d:\cloud\onedrive\programming\projects\staticdb\src\parser.h
+	"json.hpp"
+	"PhysicalLayer/Utility.h"
+
+1487005678 c:\python27\include\frameobject.h
+
