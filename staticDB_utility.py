@@ -1,10 +1,18 @@
 from struct import *
 
-sig = "staticDB v1.0"
+sig = "staticDB V1.0"
 bi_sig = len("bi")
 bd_sig = len("bd")
-filename = "testdb"
-disk_util_size = 12 + bd_sig
+filename = "tests/testdb"
+disk_util_size = 8 * 2 + 4 + bd_sig
+
+
+def side_by_side(val1, val2):
+    if (val1[0] + val1[1] == val2[0]):
+        return True
+    if (val2[0] - val1[1] == val1[0]):
+        return True
+    return False
 
 
 def go_get_data(filepos):
@@ -12,44 +20,47 @@ def go_get_data(filepos):
     with open(filename, "rb") as f:
         f.seek(filepos)
         byte = f.read(bd_sig)
-        # value["sig"] = byte
-        byte = f.read(12)
-        tmp = unpack("III", byte)
+        value["sig"] = byte
+        if byte != "bd": print filepos, "data signature Error"
         v = {}
-        v["size"] = tmp[0]
-        v["ref"] = tmp[1]
-        v["mem"] = tmp[2]
+        v["size"], = unpack("Q", f.read(8))
+        v["ref"], = unpack("I", f.read(4))
+        v["mem"], = unpack("Q", f.read(8))
         value['a'] = v
-        if (tmp[0] < 10):
-            byte = f.read(tmp[0])
+        if (v["size"] < 10):
+            byte = f.read(v["size"])
             value["data"] = byte
     return value
 
 
-with open(filename, "rb") as f:
+def verifySignature(f):
     if f.read(len(sig)) != sig:
         print "DB BEGIN Signature Error"
-    f.seek(-len(sig), 2)
-    if f.read(len(sig)) != sig:
-        print "DB END Signature Error"
-    f.seek(len(sig))
 
-    byte = f.read(16)
-    baseindex, pairindex = unpack("QQ", byte)
-    print "Base Index Start From ", baseindex, " pair Index : ", pairindex
-    f.seek(baseindex)
-    byte = f.read(bi_sig)
-    cnt = unpack(str(bi_sig) + "s", byte)
-    print "baseIndex Signature : ", cnt[0]
-    byte = f.read(16)
-    base_count, base_index_count = unpack("QQ", byte)
-    print "No of Data elements ", base_count, " Next Index To Be Given : ", base_index_count
+
+def readHeader(f):
+    f.seek(len(sig))
+    byte = f.read(8)
+    password = f.read(32)
+    baseindex, = unpack("Q", byte)
+    print "Base Index Start From ", baseindex, "Password : ", password
+    return baseindex
+
+
+def readIndex(f):
+    byte = f.read(8)
+    base_count, = unpack("Q", byte)
+    print "No of Data elements ", base_count
     base_index_list = {}
     for i in xrange(base_count):
         byte = f.read(16)
         tmp = unpack("QQ", byte)
         base_index_list[tmp[0]] = tmp[1]
-        # print tmp
+    print base_index_list
+    return base_index_list
+
+
+def readDelList(f):
     byte = f.read(8)
     base_del_count = unpack("Q", byte)[0]
     print "No of deleted Region : ", base_del_count
@@ -59,6 +70,29 @@ with open(filename, "rb") as f:
         tmp = unpack("QQ", byte)
         base_del_list.append(list(tmp))
     print base_del_list
+    return base_del_list
+
+
+def readBase(f, baseindex):
+    f.seek(baseindex)
+    byte = f.read(bi_sig)
+    cnt = unpack(str(bi_sig) + "s", byte)
+    print "baseIndex Signature : ", cnt[0]
+    base_index_list = readIndex(f)
+    base_del_list = readDelList(f)
+    return base_index_list, base_del_list
+
+
+with open(filename, "rb") as f:
+    verifySignature(f)
+
+    baseindex = readHeader(f)
+
+    base_index_list, base_del_list = readBase(f, baseindex)
+
+
+    # print tmp
+
 
 
     ##    for i,val in base_index_list.iteritems():
@@ -71,15 +105,6 @@ with open(filename, "rb") as f:
     for i, val in base_index_list.iteritems():
         base_del_list.append([val, go_get_data(val)["a"]["mem"] + disk_util_size])
     base_del_list.sort(tupcmp)
-
-
-    def side_by_side(val1, val2):
-        if (val1[0] + val1[1] == val2[0]):
-            return True
-        if (val2[0] - val1[1] == val1[0]):
-            return True
-        return False
-
 
     for i, val in enumerate(base_del_list):
         p = 0

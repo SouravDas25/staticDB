@@ -1,6 +1,6 @@
 
 
-//#include "../tst/include/marshal.h"
+//#src "../tst/src/marshal.h"
 
 
 //#ifdef exportapi 
@@ -9,7 +9,7 @@
 //#define exportapi __declspec(dllimport)
 //#endif
 
-//#include "../tst/staticDB.cpp"
+//#src "../tst/staticDB.cpp"
 
 
 

@@ -6275,7 +6275,7 @@
 // modifying the selection.
 
 // If shift is held or the extend flag is set, extends a range to
-// include a given position (and optionally a second position).
+// src a given position (and optionally a second position).
 // Otherwise, simply returns the range between the given positions.
 // Used for cursor motion and such.
     function extendRange(range, head, other, extend) {

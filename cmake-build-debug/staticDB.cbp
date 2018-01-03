@@ -82,61 +82,64 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/Database.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/JsonStore.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/Parser.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/Base.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/DataManager.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/DataNode.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/FreeList.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/FreeNode.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/SDB_Error.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/Utility.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File.hpp">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File_SDL.hpp">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File_Struct.hpp">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/file/File_stdio.hpp">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/PhysicalLayer/fileObj.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/StringMapper.h">
-			<Option target="staticDB"/>
-		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/include/json.hpp">
-			<Option target="staticDB"/>
-		</Unit>
 		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/main.cpp">
 			<Option target="staticDB"/>
 		</Unit>
-		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/version.h">
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/Compiler.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/Database.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/JsonStore.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/Parser.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/Base.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/DataManager.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/DataNode.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/FreeList.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/FreeNode.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/SDB_Error.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/Utility.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/file/File.hpp">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/file/File_SDL.hpp">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/file/File_Struct.hpp">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/file/File_stdio.hpp">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/PhysicalLayer/fileObj.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/StringMapper.h">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/json.hpp">
+			<Option target="staticDB"/>
+		</Unit>
+		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/src/version.h">
 			<Option target="staticDB"/>
 		</Unit>
 		<Unit filename="D:/Cloud/OneDrive/Programming/Projects/staticDB/CMakeLists.txt">

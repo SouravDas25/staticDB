@@ -2,7 +2,7 @@
 
 
 #include <iostream>
-#include "include/StringMapper.h"
+#include "../src/StringMapper.h"
 
 int main() {
     using namespace StaticDB;

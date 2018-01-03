@@ -1,8 +1,7 @@
 
 
 
-#include <iostream>
-#include "../include/JsonStore.h"
+#include "../src/JsonStore.h"
 
 int main() {
     using namespace StaticDB;
@@ -13,6 +12,7 @@ int main() {
         int c = true;
         while (c) {
             string s;
+            cout << flush;
             cout << endl << "$ : ";
             cin >> s;
             try {
