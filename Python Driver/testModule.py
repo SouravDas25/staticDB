@@ -3,7 +3,7 @@ import StaticDB
 
 def main():
     db = StaticDB.Database()
-    # print(staticDB.start_Msg())
+    # print(StaticDB.start_Msg())
     while True:
         filename = raw_input("Enter File Name : ")
         if filename == "quit" or filename == "QUIT":
@@ -13,7 +13,7 @@ def main():
             password = "root"
         else:
             password = raw_input("Enter Password : ")
-        print(" Connecting To Database : '%s' \nwith password : '%s' " %
+        print("Connecting To Database : '%s' \nwith password : '%s' " %
               (filename, password))
         t = db.open(filename, password)
         while t:

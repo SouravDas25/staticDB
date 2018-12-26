@@ -400,7 +400,7 @@ template <typename T>
      return ss.str();
   }
 
-  int stoi(string s, size_t * n)
+  int stringToInteger(string s, size_t *n)
   {
   	  char ** c = NULL;
       long int i =  strtol(s.c_str(),c,10);
