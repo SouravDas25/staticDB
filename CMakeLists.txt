@@ -16,9 +16,13 @@ set(SOURCE_FILES
         src/PhysicalLayer/FreeNode.h
         src/PhysicalLayer/SDB_Error.h
         src/PhysicalLayer/Utility.h
+        src/Compiler.h
+        src/Database.h
         src/json.hpp
         src/JsonStore.h
-        main.cpp
-        src/version.h src/Parser.h src/StringMapper.h src/Database.h src/Compiler.h)
+        src/Parser.h
+        src/StringMapper.h
+        src/version.h
+        main.cpp)
 
 add_executable(staticDB ${SOURCE_FILES})
