@@ -263,23 +263,23 @@
 1514978318 d:\cloud\onedrive\programming\projects\staticdb\src\database.h
 	"Compiler.h"
 
-1514977777 d:\cloud\onedrive\programming\projects\staticdb\src\compiler.h
+1546097619 d:\cloud\onedrive\programming\projects\staticdb\src\compiler.h
 	"StringMapper.h"
 	"Parser.h"
 
-1514978109 d:\cloud\onedrive\programming\projects\staticdb\src\stringmapper.h
+1546096278 d:\cloud\onedrive\programming\projects\staticdb\src\stringmapper.h
 	"JsonStore.h"
 
 1514900558 d:\cloud\onedrive\programming\projects\staticdb\src\jsonstore.h
 	"PhysicalLayer/DataManager.h"
 	"json.hpp"
 
-1514900260 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\datamanager.h
+1546096306 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\datamanager.h
 	"utility.h"
 	"fileObj.h"
 	"Base.h"
 
-1514996981 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\utility.h
+1546105934 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\utility.h
 	<stdio.h>
 	<stdbool.h>
 	<stdlib.h>
@@ -316,7 +316,7 @@
 	<exception>
 	<string>
 
-1514980172 d:\cloud\onedrive\programming\projects\staticdb\src\version.h
+1546095708 d:\cloud\onedrive\programming\projects\staticdb\src\version.h
 
 1514738152 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\fileobj.h
 	"utility.h"
@@ -336,22 +336,22 @@
 	<cstdio>
 	"File_Struct.hpp"
 
-1514976043 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\base.h
+1545845912 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\base.h
 	"DataNode.h"
 	"FreeList.h"
 
-1514972466 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\datanode.h
+1545845912 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\datanode.h
 	"utility.h"
 	"fileObj.h"
 
-1514975598 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\freelist.h
+1545845912 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\freelist.h
 	"FreeNode.h"
 
-1514568805 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\freenode.h
+1545845912 d:\cloud\onedrive\programming\projects\staticdb\src\physicallayer\freenode.h
 	"utility.h"
 	"DataNode.h"
 
-1514980247 d:\cloud\onedrive\programming\projects\staticdb\src\json.hpp
+1546105914 d:\cloud\onedrive\programming\projects\staticdb\src\json.hpp
 	<algorithm>
 	<array>
 	<cassert>
@@ -380,9 +380,37 @@
 	<valarray>
 	<vector>
 
-1514977304 d:\cloud\onedrive\programming\projects\staticdb\src\parser.h
+1546096791 d:\cloud\onedrive\programming\projects\staticdb\src\parser.h
 	"json.hpp"
 	"PhysicalLayer/Utility.h"
+	"Constants.h"
 
 1487005678 c:\python27\include\frameobject.h
+
+1546109825 source:d:\cloud\onedrive\programming\projects\staticdb\python driver\cython_src\staticdb.cpp
+	"Python.h"
+	<stddef.h>
+	"longintrepr.h"
+	<stdint.h>
+	<math.h>
+	<string.h>
+	<string>
+	"ios"
+	"new"
+	"stdexcept"
+	"typeinfo"
+	<stdint.h>
+	"Database.h"
+	<omp.h>
+	<cstdlib>
+	<new>
+	<new>
+	<typeinfo>
+	<stdexcept>
+	<ios>
+	"compile.h"
+	"frameobject.h"
+	"traceback.h"
+
+1546097949 d:\cloud\onedrive\programming\projects\staticdb\src\constants.h
 

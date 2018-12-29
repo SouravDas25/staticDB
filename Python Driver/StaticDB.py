@@ -1,4 +1,4 @@
-import staticDB as sdb
+import staticDb as sdb
 
 
 class Database(object):

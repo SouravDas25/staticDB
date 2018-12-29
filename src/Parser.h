@@ -7,6 +7,7 @@
 
 #include "json.hpp"
 #include "PhysicalLayer/Utility.h"
+#include "Constants.h"
 
 using json = nlohmann::json;
 using string = std::string;
@@ -73,7 +74,7 @@ namespace StaticDB
             {
                 if( identifierValidity(vos[0]) && vos[1] == "=" )
                 {
-                    syntaxObj["TYPE"] = "STORE";
+                    syntaxObj["TYPE"] = TOKEN::STORE;
                     syntaxObj["KEY"] = vos[0];
                     syntaxObj["VALUE"] = vos[2];
                     return syntaxObj;
@@ -81,17 +82,17 @@ namespace StaticDB
             }
             else if(vos.size() == 2) // del apple
             {
-                if( stricmp(vos[0],"del") == 0 && identifierValidity(vos[1]) )
+                if( stricmp(vos[0],KEYWORDS::DELETE) == 0 && identifierValidity(vos[1]) )
                 {
-                    syntaxObj["TYPE"] = "DELETE";
+                    syntaxObj["TYPE"] = TOKEN::DELETE;
                     syntaxObj["VALUE"] = vos[1];
                     return syntaxObj;
                 }
-                if( stricmp(vos[0],"debug") == 0 )
+                if( stricmp(vos[0],KEYWORDS::DEBUG) == 0 )
                 {
                     if(stricmp(vos[1],"print") == 0 )
                     {
-                        syntaxObj["TYPE"] = "DEBUG";
+                        syntaxObj["TYPE"] = TOKEN::DEBUG;
                         syntaxObj["VALUE"] = "PRINT";
                         return syntaxObj;
                     }
@@ -99,19 +100,24 @@ namespace StaticDB
             }
             else if(vos.size() == 1) // apple
             {
-                if( stricmp(vos[0],"commit") == 0 )
+                if( stricmp(vos[0],KEYWORDS::HELP) == 0 )
                 {
-                    syntaxObj["TYPE"] = "COMMIT";
+                    syntaxObj["TYPE"] = TOKEN::HELP;
                     return syntaxObj;
                 }
-                if( stricmp(vos[0],"$keys") == 0 )
+                if( stricmp(vos[0],KEYWORDS::COMMIT) == 0 )
                 {
-                    syntaxObj["TYPE"] = "KEYS";
+                    syntaxObj["TYPE"] = TOKEN::COMMIT;
+                    return syntaxObj;
+                }
+                if( stricmp(vos[0],KEYWORDS::KEYS) == 0 )
+                {
+                    syntaxObj["TYPE"] = TOKEN::KEYS;
                     return syntaxObj;
                 }
                 if( identifierValidity(vos[0],true) )
                 {
-                    syntaxObj["TYPE"] = "FETCH";
+                    syntaxObj["TYPE"] = TOKEN::FETCH;
                     syntaxObj["VALUE"] = vos[0];
                     return syntaxObj;
                 }

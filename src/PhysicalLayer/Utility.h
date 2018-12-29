@@ -228,7 +228,9 @@ namespace StaticDB {
     const string &get_version() {
         using namespace AutoVersion;
         static string s;
-        if (s.empty()) s = stringSprintf("%ld.%ld.%ld.%s", MAJOR, MINOR, BUILD, STATUS);
+        if (s.empty()) {
+            s = stringSprintf("%ld.%ld.%ld.%s", MAJOR, MINOR, BUILD, STATUS);
+        }
         return s;
     }
 
@@ -390,25 +392,24 @@ namespace StaticDB {
 
 }
 
-namespace std{
+namespace std {
 
-template <typename T>
-  string to_string ( T Number )
-  {
-     std::ostringstream ss;
-     ss << Number;
-     return ss.str();
-  }
+    template<typename T>
+    string to_string(T Number) {
+        std::ostringstream ss;
+        ss << Number;
+        return ss.str();
+    }
 
-  int stringToInteger(string s, size_t *n)
-  {
-  	  char ** c = NULL;
-      long int i =  strtol(s.c_str(),c,10);
-      if(c==NULL) *n = 0;
-      else *n = *c - s.c_str();
-      return i;
-  }
+    int stringToInteger(string s, size_t *n) {
+        char **c = NULL;
+        long int i = strtol(s.c_str(), c, 10);
+        if (c == NULL) *n = 0;
+        else *n = *c - s.c_str();
+        return i;
+    }
 
 }
+
 
 #endif // SDB_UTILITY_H

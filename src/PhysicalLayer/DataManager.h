@@ -252,7 +252,7 @@ public:
         return sb.rollback();
     }
 
-    void printBase(ostream &out)
+    void printBase(ostream &out) const
     {
         sb.print(out);
     }
