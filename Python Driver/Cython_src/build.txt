@@ -1,0 +1,3 @@
+python cython_setup.py build_ext --inplace
+
+import cbp file in codes block

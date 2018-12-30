@@ -6335,7 +6335,7 @@ within a JSON document. It can be used with functions `at` and
     */
         static int array_index(const std::string &s) {
             size_t processed_chars = 0;
-            const int res = std::stoi(s, &processed_chars);
+            const int res = std::stringToInteger(s, &processed_chars);
 
             // check if the string was completely read
             if (JSON_UNLIKELY(processed_chars != s.size())) {

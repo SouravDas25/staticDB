@@ -23,6 +23,12 @@ set(SOURCE_FILES
         src/Parser.h
         src/StringMapper.h
         src/version.h
-        main.cpp)
+        main.cpp
+        src/Constants.h
+        src/SymbolTree.h
+        src/Intefaces/TokenInterface.h
+        src/Tokens/BasicTokens.h
+        src/CommonUtil.h
+        src/Tokens/TokenDeclarations.h)
 
 add_executable(staticDB ${SOURCE_FILES})

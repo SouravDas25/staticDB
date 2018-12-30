@@ -25,6 +25,8 @@ namespace StaticDB {
             //saveStruct() : key(L_ADDR_NULL) , value(L_ADDR_NULL){}
         };
 
+        friend void stringMapperPrint(const StringMapper& stringMapper,ostream &out);
+
     protected:
         /*L_ADDR generateIndex() {
             return autoIndexer + 1;
@@ -66,6 +68,24 @@ namespace StaticDB {
             }
             L_ADDR keyIndex = getKeyIndex(key);
             return keyTree.at(keyIndex);
+        }
+
+        void print(ostream &out) const {
+            out << "StringMapper : { " << endl;
+            out << "KeyList : " << endl;
+            for (auto it = stringTree.begin(); it != stringTree.end(); ++it) {
+                out << "{";
+                out << ' ' << it->first << " : " << it->second;
+                out << "}" << endl;
+            }
+            out << "MapperList : " << endl;
+            for (auto it = keyTree.begin(); it != keyTree.end(); ++it) {
+                out << "{";
+                out << ' ' << it->first << " : " << it->second;
+                out << "}" << endl;
+            }
+            out << "}" << endl << endl;
+            JsonStore::printBase(out);
         }
 
     public:
@@ -160,26 +180,12 @@ namespace StaticDB {
             return JsonStore::close();
         }
 
-        void print(ostream &out) {
-            out << "StringMapper : { " << endl;
-            out << "KeyList : " << endl;
-            for (auto it = stringTree.begin(); it != stringTree.end(); ++it) {
-                out << "{";
-                out << ' ' << it->first << " : " << it->second;
-                out << "}" << endl;
-            }
-            out << "MapperList : " << endl;
-            for (auto it = keyTree.begin(); it != keyTree.end(); ++it) {
-                out << "{";
-                out << ' ' << it->first << " : " << it->second;
-                out << "}" << endl;
-            }
-            out << "}" << endl << endl;
-            JsonStore::printBase(out);
-        }
-
 
     };
+
+    void stringMapperPrint(const StringMapper& stringMapper,ostream &out){
+        stringMapper.print(out);
+    }
 
 }
 

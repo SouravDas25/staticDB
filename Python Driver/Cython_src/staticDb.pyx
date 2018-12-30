@@ -1,6 +1,9 @@
+# distutils: language=c++"
+
 cimport CDatabase as cdb
 
 cdef class Database:
+    '''NoSql file based database.'''
     cdef cdb.Database db ;
 
     def __cinit__(self):
