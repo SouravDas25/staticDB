@@ -35,22 +35,15 @@ namespace StaticDB {
     }
 
 
-    class KEYWORDS {
-    public:
-        static const string HELP;
-//        static const string STORE = "help";
-        static const string DELETE;
-        static const string DEBUG;
-        static const string COMMIT;
-        static const string KEYS;
-//        static const string FETCH = "help";
+    namespace KEYWORDS {
+    const string HELP = "help";
+    const string DELETE = "del";
+    const string DEBUG = "debug";
+    const string COMMIT = "commit";
+    const string KEYS = "$keys";
     };
 
-    const string KEYWORDS::HELP = "help";
-    const string KEYWORDS::DELETE = "del";
-    const string KEYWORDS::DEBUG = "debug";
-    const string KEYWORDS::COMMIT = "commit";
-    const string KEYWORDS::KEYS = "$keys";
+
 }
 
 #include "Tokens/BasicTokens.h"
