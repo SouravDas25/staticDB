@@ -1,6 +1,6 @@
 
 
-*.xml
+
 *.pyc
 .idea
 colors

@@ -4,18 +4,18 @@ project(staticDB)
 set(CMAKE_CXX_STANDARD 11)
 
 set(SOURCE_FILES
-        src/PhysicalLayer/file/File.hpp
-        src/PhysicalLayer/file/File_SDL.hpp
-        src/PhysicalLayer/file/File_stdio.hpp
-        src/PhysicalLayer/file/File_Struct.hpp
-        src/PhysicalLayer/Base.h
-        src/PhysicalLayer/DataManager.h
-        src/PhysicalLayer/DataNode.h
-        src/PhysicalLayer/fileObj.h
-        src/PhysicalLayer/FreeList.h
-        src/PhysicalLayer/FreeNode.h
-        src/PhysicalLayer/SDB_Error.h
-        src/PhysicalLayer/Utility.h
+        src/Engine/file/File.hpp
+        src/Engine/file/File_SDL.hpp
+        src/Engine/file/File_stdio.hpp
+        src/Engine/file/File_Struct.hpp
+        src/Engine/Base.h
+        src/Engine/DataManager.h
+        src/Engine/DataNode.h
+        src/Engine/fileObj.h
+        src/Engine/FreeList.h
+        src/Engine/FreeNode.h
+        src/Engine/SDB_Error.h
+        src/Engine/Utility.h
         src/Compiler.h
         src/Database.h
         src/json.hpp
@@ -29,6 +29,6 @@ set(SOURCE_FILES
         src/Intefaces/TokenInterface.h
         src/Tokens/BasicTokens.h
         src/CommonUtil.h
-        src/Tokens/TokenDeclarations.h)
+        src/Tokens/TokenDeclarations.h src/Structures/SymbolTreeNode.h)
 
 add_executable(staticDB ${SOURCE_FILES})

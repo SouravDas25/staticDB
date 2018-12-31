@@ -36,11 +36,11 @@ namespace StaticDB {
 
 
     namespace KEYWORDS {
-    const string HELP = "help";
-    const string DELETE = "del";
-    const string DEBUG = "debug";
-    const string COMMIT = "commit";
-    const string KEYS = "$keys";
+        const string HELP = "help";
+        const string DELETE = "del";
+        const string DEBUG = "debug";
+        const string COMMIT = "commit";
+        const string KEYS = "$keys";
     };
 
 

@@ -7,6 +7,7 @@
 
 #include "Compiler.h"
 
+// TODO password change option
 namespace StaticDB {
 
     class Database : public StringMapper {

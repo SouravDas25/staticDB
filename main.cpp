@@ -14,7 +14,7 @@ int main() {
         cout << get_StartMsg();
         while (c) {
             string s;
-            cout << endl << "$ ";
+            cout << endl << ">>> ";
             s = multi_line_input();
             if( stricmp(s,"clear") == 0 ) {
                 system("CLS");
